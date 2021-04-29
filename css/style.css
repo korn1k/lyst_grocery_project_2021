@@ -1,0 +1,140 @@
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+  
+    display: flex;
+    align-items: center;
+  }
+
+  /*class to make an element take up 100% of its container's width*/
+.full-width {
+    width: 100%;
+}
+
+/*class to make an element take up 50% of its container's width*/
+.half-width-element {
+    width: 50%;
+}
+
+/*class to make an element take up 30% of its container's width*/
+.one-third-width-element {
+    width: 30%;
+}
+
+/*Google Font used for titles*/
+.NotoSansKRFont {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*Google Font used for most text*/
+.NanumGothic {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*Google Font used for titles*/
+.SourceCodePro {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/*Responsive Design*/
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #LystTitle {
+        text-align: center;
+    }
+    .lineBreak {
+        display:none;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #LystTitle {
+        text-align: center;
+    }
+    .lineBreak {
+        display:none;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #LystTitle {
+        text-align: center;
+    }
+    .lineBreak {
+        display:none;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .hidden {
+        display: none;
+    }
+    #LystTitle {
+        text-align: center;
+    }
+    .lineBreak {
+        display:none;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .hidden {
+        display: none;
+    }
+}
+
+/*Adding open-source styling that makes the list look like paper*/
+/*The original open-source code has been modified for our project*/
+.paper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 5px 0px #888;
+}
+.paper::before {
+  content: '';
+  position: absolute;
+  left: 45px;
+  height: 100%;
+  width: 2px;
+  background: rgba(255,0,0,0.4);
+}
+.lines {
+  margin-top: 0px;
+  height: calc(100% - 40px);
+  width: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px);
+}
+.text {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  bottom: 10px;
+  right: 10px;
+  line-height: 25px;
+  overflow-y: scroll;
+  outline: none;
+}
+.holes {
+  position: absolute;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 2px 0px #888;
+}
+.hole-top {
+  top: 10%;
+}
+.hole-middle {
+  top: 50%;
+}
+.hole-bottom {
+  bottom: 10%;
+}
